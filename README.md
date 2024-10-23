@@ -1,2 +1,2 @@
-# my_porfolio
+# my_portfolio
 welcome to my portfolio
