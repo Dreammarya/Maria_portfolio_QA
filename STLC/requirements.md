@@ -1,64 +1,67 @@
-## **The software**
+# Home Work: Requirements
 
-Social media platform, with the following existing functionalities:
+## The Software
+You will test a webshop, which can be found here: [GroceryMate](https://grocerymate.masterschool.com/)
 
+The webshop has the following basic functionalities:
 - Register and login functionality
-- Add pictures to your profile
-- Find friends
-- Add friends to favorites
-- Social media platform had ads
+- Searching for products, sorting on price, categories of products
+- Add products to favorites
+- Add products to the basket
+- Check-out process: billing and sending information in a form, choose payment method, calculation of costs (calculate total price)
 
-## **New features**
+## New Features
 
-### **1. Age Restriction for Account Creation**
+### 1. Product Rating System
+**Requirement:** Users should be able to rate products with a 5-star system and have the option to add written feedback.
 
-**Vague Requirement**:
+**Questions:**
+- How should the system handle incomplete or missing ratings (e.g., submitting without a star rating or without text feedback)?
+- What restrictions apply to written feedback (e.g., character limits, prohibited words, review moderation)?
+- Can users edit or delete their ratings after submission, and how is this reflected in the overall product rating?
+- Who can rate the product?
 
-- Users should only be able to create an account if they meet the minimum age requirement of 16 years.
+**Detailed Requirement:**
+- Only users who have purchased the product can submit a rating; otherwise, an informational pop-up appears.
+- A rating (stars) is mandatory, but text feedback is optional.
+- If a user does not provide a star rating, they cannot submit a review.
+- Text feedback is limited to 100 characters.
+- Any language is allowed, and there is no moderation.
 
-**Questions**:
+---
 
-1. How should the age verification be implemented? (e.g., date of birth input)
-2. What format should the date of birth be in? (e.g., MM/DD/YYYY)
-3. What error message should be displayed if the user is under 16?
-4. Are there any specific legal disclaimers or privacy notices required for age verification?
+### 2. Age Verification for Alcoholic Products
+**Requirement:** Alcoholic products require age verification. A modal should appear when navigating to the alcoholic products category asking if the user is 18+. Users must input their age before accessing the alcoholic products.
 
-**Detailed Requirement**:
+**Questions:**
+- What happens if a user enters an invalid or incorrect age (e.g., below 18, non-numeric input)?
+- Does the system display a specific error message for different invalid inputs?
+- Is there a limit on the number of failed attempts before access is restricted?
+- Does the age verification modal appear again if the user refreshes the page or navigates back later?
+- If the page is refreshed, does the system remember the user's previous input?
+- Is the age verification requirement different based on user location due to regional legal restrictions?
 
-- During the registration process, users must provide their date of birth. The system should validate that the user is at least 16 years old on the date of account creation. If the user is under 16, an error message should be displayed, and the account should not be created.
+**Detailed Requirement:**
+- When a user enters the alcoholic product section, a modal appears asking for age confirmation.
+- Users must enter their birthdate manually (DD/MM/YYYY).
+- If the user is under 18, access to alcoholic products is blocked, and an error message is displayed.
+- If the user enters non-numeric input or an incorrect format, an error message should prompt them to enter a valid date.
+- Once verified, the user should not have to confirm age again in the same session.
+- If the session expires, age verification is required again.
+- The system should comply with relevant legal regulations regarding age verification and user data storage.
 
-### **2. Paid Subscription to Remove Ads**
+---
 
-**Vague Requirement**:
+### 3. Shipping Cost Changes
+**Requirement:** Free shipping for orders above a certain amount. Orders below this amount will incur a shipping fee.
 
-- There should be an option for users to subscribe to a paid plan that allows them to use the platform without seeing any advertisements.
+**Questions:**
+- How does the system handle edge cases like applying discounts that bring an order below the free shipping threshold?
+- Is the shipping cost updated dynamically in the cart/checkout when items are added or removed?
+- Are there different rules for free shipping based on delivery location, item weight, or promotional events?
 
-**Questions**:
-
-1. Where should the option to subscribe to the paid plan be located? (e.g., account settings, homepage)
-2. What payment methods will be supported?
-3. What should happen if the payment fails?
-4. How should the system handle subscription renewals and cancellations?
-5. What pricing tiers will be offered for the subscription?
-
-**Detailed Requirement**:
-
-- Users should have an option in their account settings to subscribe to a premium plan. Upon successful subscription and payment, advertisements should not be disabled across all areas of the platform. The system should also manage the subscription status, renewal reminders, and handle scenarios when the subscription expires or is canceled.
-
-### **3. Profile Story**
-
-**Vague Requirement**:
-
-- Users should have the ability to write a brief story about themselves, which will be displayed under their account name on their profile. This story should have a character limit.
-
-**Questions**:
-
-1. Where should the input field for the profile story be located?
-2. Should there be any formatting options (e.g., bold, italic)?
-3. What should happen if the user exceeds the character limit? (e.g., error message, truncated text)
-4. Are there any restrictions on the content of the story (e.g., profanity filter)?
-
-**Detailed Requirement**:
-
-- Users should have an input field in their profile settings where they can enter a personal story or bio. This field should allow a maximum of 100 characters. The story should be displayed below the account name on the user's profile page. The system should provide feedback if the user attempts to enter more than 100 characters, preventing them from saving the excess characters. For the MVP there will be no profanity filter, this will be implemented later.
-
+**Detailed Requirement:**
+- If an order total exceeds **X€**, shipping is free.
+- If the order total is below **X€**, a standard shipping fee of **Y€** applies.
+- Discounts, vouchers, or promotional codes may affect the total price and impact free shipping eligibility.
+- Free shipping rules may vary based on delivery location, item weight, or special promotions.
