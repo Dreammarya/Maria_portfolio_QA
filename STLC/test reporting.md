@@ -12,6 +12,7 @@ Requirement: Users should be able to rate products with a 5-star system and have
 | 3     | Leave star rating empty            |                                                        |        |     |               |
 | 4     | Click "Submit Review"              | Error message: "Please select a star rating before submitting." |     |               |               |
 
+
 ### **1.2 Review Submission with Valid Input**
 **Test Design Technique:** Use Case Testing  
 
@@ -22,7 +23,7 @@ Requirement: Users should be able to rate products with a 5-star system and have
 | 3     | Select 4 stars                   | Stars are highlighted                               |        |     |               |
 | 4     | Enter "Very tasty!" in feedback  | Input is accepted                                  |        |     |               |
 | 5     | Click "Submit Review"           | Review is successfully posted under product reviews |        |     |               |
-
+<img width="453" alt="image" src="https://github.com/user-attachments/assets/37fb0b61-d08b-4bc8-97d1-1812f9870324" />
 ### **1.3 Review Character Limit**
 **Test Design Technique:** Boundary Value Analysis (BVA)  
 
