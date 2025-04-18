@@ -21,7 +21,7 @@ The test cases designed will test the three new features.
 - **Input:** Select 4 stars and enter feedback "very testy!"
 - **Expected Outcome:** Review successfully submitted and displayed under product reviews.
 
-#### **1.3 Review Character Limit **
+#### **1.3 Review Character Limit**
 - **Test Design Technique:** Boundary Value Analysis (BVA)
 - **Test Case:** Verify that a review cannot exceed 100 characters.
 - **Input:** Enter a review with 101 characters.
