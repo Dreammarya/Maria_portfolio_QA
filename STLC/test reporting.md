@@ -8,9 +8,9 @@ Requirement: Users should be able to rate products with a 5-star system and have
 | Step# | Action                             | Expected Outcome                                       | OK/NOK | URL | Link to Issue |
 |-------|------------------------------------|--------------------------------------------------------|--------|-----|---------------|
 | 1     | Go to page of purchaced product    | Product details page is displayed                      |    ok  |     |               |
-| 2     | Click on "Write a Review"          | Review submission form appears                         |        |  https://grocerymate.masterschool.com/product/66b3a57b3fd5048eacb4798f   |               |
-| 3     | Leave star rating empty            |                                                        |        |     |               |
-| 4     | Click "Submit Review"              | Error message: "Please select a star rating before submitting." |     |               |               |
+| 2     | Click on "Write a Review"          | Review submission form appears                         |     ok  |  https://grocerymate.masterschool.com/product/66b3a57b3fd5048eacb4798f   |               |
+| 3     | Leave star rating empty            |                                                        |     ok   |     |               |
+| 4     | Click "Submit Review"              | Error message: "Please select a star rating before submitting." ok|     |               |               |
 
 
 ### **1.2 Review Submission with Valid Input**
@@ -18,20 +18,20 @@ Requirement: Users should be able to rate products with a 5-star system and have
 
 | Step# | Action                          | Expected Outcome                                      | OK/NOK | URL | Link to Issue |
 |-------|---------------------------------|------------------------------------------------------|--------|-----|---------------|
-| 1     | Go to product page              | Product details page is displayed                   |        |     |               |
-| 2     | Click on "Write a Review"       | Review submission form appears                      |        |     |               |
-| 3     | Select 4 stars                   | Stars are highlighted                               |        |     |               |
-| 4     | Enter "Very tasty!" in feedback  | Input is accepted                                  |        |     |               |
-| 5     | Click "Submit Review"           | Review is successfully posted under product reviews |        |     |               |
+| 1     | Go to product page              | Product details page is displayed                   |  ok     |     |               |
+| 2     | Click on "Write a Review"       | Review submission form appears                      |   ok   |     |               |
+| 3     | Select 4 stars                   | Stars are highlighted                              |   ok  |     |               |
+| 4     | Enter "Very tasty!" in feedback  | Input is accepted                                  |   ok    |     |               |
+| 5     | Click "Submit Review"           | Review is successfully posted under product reviews |     ok   |     |               |
 <img width="453" alt="image" src="https://github.com/user-attachments/assets/37fb0b61-d08b-4bc8-97d1-1812f9870324" />
 ### **1.3 Review Character Limit**
 **Test Design Technique:** Boundary Value Analysis (BVA)  
 
 | Step# | Action                             | Expected Outcome                                      | OK/NOK | URL | Link to Issue |
 |-------|------------------------------------|------------------------------------------------------|--------|-----|---------------|
-| 1     | Go to product page                 | Product details page is displayed                   |        |     |               |
-| 2     | Click on "Write a Review"          | Review submission form appears                      |        |     |               |
-| 3     | Enter a 101-character review       |                                                     |        |     |               |
+| 1     | Go to product page                 | Product details page is displayed                   |    ok    |     |               |
+| 2     | Click on "Write a Review"          | Review submission form appears                      |    ok    |     |               |
+| 3     | Enter a 101-character review       |                                                     |    ok    |     |               |
 | 4     | Click "Submit Review"              | Error message: "Review cannot exceed 100 characters." |        |     |               |
 
 ---
