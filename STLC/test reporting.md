@@ -19,12 +19,23 @@ Requirement: Users should be able to rate products with a 5-star system and have
 |-------|---------------------------------|------------------------------------------------------|--------|-----|---------------|
 | 1     |After purchace Go to product page              | Product details page is displayed                   |  ok     |     |               |
 | 2     | Click on "Write a Review"       | Review submission form appears                      |   ok   |     |               |
-| 3     | Verify 5 stars shown                 | Stars are grayed out till user changed it                            |   nok  | https://grocerymate.masterschool.com/product/66b3a57b3fd5048eacb47998    |               |
+| 3     | Verify 5 stars shown                 | Stars are grayed out till user changed it                            |   nok  | https://grocerymate.masterschool.com/product/66b3a57b3fd5048eacb47998    |   https://github.com/Dreammarya/Maria_portfolio_QA/issues/6            |
 
 <img width="888" alt="image" src="https://github.com/user-attachments/assets/dbbc929b-409f-4549-ac7a-a26c785b77b4" />
 
+### **1.3 "Send" button is highlited **
+**Test Design Technique:** Use Case Testing 
 
-### **1.3 Review Submission with Valid Input**
+| Step# | Action                          | Expected Outcome                                      | OK/NOK | URL | Link to Issue |
+|-------|---------------------------------|------------------------------------------------------|--------|-----|---------------|
+| 1     |After purchace Go to product page              | Product details page is displayed                   |  ok     |     |               |
+| 2     | Click on "Write a Review"       | Review submission form appears                      |   ok   |     |               |
+| 3     | Type some text                 | Send button is highlited                            |   nok  |     |   https://github.com/Dreammarya/Maria_portfolio_QA/issues/7            |
+
+<img width="990" alt="image" src="https://github.com/user-attachments/assets/734ed4fe-554a-4c28-ab71-69d21634d98f" />
+
+
+### **1.4 Review Submission with Valid Input**
 **Test Design Technique:** Use Case Testing  
 
 | Step# | Action                          | Expected Outcome                                      | OK/NOK | URL | Link to Issue |
@@ -37,7 +48,7 @@ Requirement: Users should be able to rate products with a 5-star system and have
 <img width="453" alt="image" src="https://github.com/user-attachments/assets/37fb0b61-d08b-4bc8-97d1-1812f9870324" />
 <img width="817" alt="image" src="https://github.com/user-attachments/assets/3d9d84bc-0eac-4b12-a26e-a2ddeb506f20" />
 
-### **1.4 Review Character Limit**
+### **1.5 Review Character Limit**
 **Test Design Technique:** Boundary Value Analysis (BVA)  
 
 | Step# | Action                             | Expected Outcome                                      | OK/NOK | URL | Link to Issue |
@@ -45,10 +56,24 @@ Requirement: Users should be able to rate products with a 5-star system and have
 | 1     | Go to product page                 | Product details page is displayed                   |    ok    |     |               |
 | 2     | Click on "Write a Review"          | Review submission form appears                      |    ok    |     |               |
 | 3     | Enter a 501-character review       |                                                     |    ok    | https://grocerymate.masterschool.com/product/66b3a57b3fd5048eacb479a1    |               |
-| 4     | Click "Submit Review"              | Error message: "Review cannot exceed 100 characters." |  NOK      |     |   https://github.com/Dreammarya/Maria_portfolio_QA/issues/5            |
+| 4     | Click "Submit Review"              | Error message: You cannot tell us more about this product. (probably better to change: "Review cannot exceed 500 characters." |  OK      |     |               |
+<img width="884" alt="image" src="https://github.com/user-attachments/assets/284f4388-d818-47a5-9676-96b567766b37" />
+
+---
+### **1.6 Review Character Limit in edit section**
+**Test Design Technique:** Boundary Value Analysis (BVA)  
+
+| Step# | Action                             | Expected Outcome                                      | OK/NOK | URL | Link to Issue |
+|-------|------------------------------------|------------------------------------------------------|--------|-----|---------------|
+| 1     | Go to written by you review          | review is displayed                   |    ok    |     |               |
+| 2     | Click on "..." - edit option         | user is able to change text                      |    ok    |     |               |
+| 3     | Enter a 501-character review       |                                                     |    ok    | https://grocerymate.masterschool.com/product/66b3a57b3fd5048eacb479a1    |               |
+| 4     | Click "Submit Review"              | Error message: "Review cannot exceed 500 characters." |  NOK      |     |   https://github.com/Dreammarya/Maria_portfolio_QA/issues/5            |
 
 ---
 <img width="1142" alt="image" src="https://github.com/user-attachments/assets/ccc273ec-d115-4ad6-8f6c-adf86d65edb2" />
+
+
 
 ## **2. Age Verification for Alcoholic Products**
 Requirement: Alcoholic products require age verification. A modal should appear when navigating to the alcoholic products category asking if the user is 18+. Users must input their age before accessing the alcoholic products.
