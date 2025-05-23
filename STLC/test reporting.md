@@ -7,7 +7,7 @@ Requirement: Users should be able to rate products with a 5-star system and have
 
 | Step# | Action                             | Expected Outcome                                       | OK/NOK | URL | Link to Issue |
 |-------|------------------------------------|--------------------------------------------------------|--------|-----|---------------|
-| 1     | Go to page of purchaced product    | Product details page is displayed                      |    ok  |     |               |
+| 1     | Go to page of purchaced product    | Product details page is displayed                      |    ok  |  https://grocerymate.masterschool.com/product/66b3a57b3fd5048eacb479a1   |               |
 | 2     | Click on "Write a Review"          | Review submission form appears                         |     ok  |  https://grocerymate.masterschool.com/product/66b3a57b3fd5048eacb4798f   |               |
 | 3     | Leave star rating empty            |                                                        |     ok   |     |               |
 | 4     | Click "Submit Review"              | Error message: "Please select a star rating before submitting." ok|     |               |               |
