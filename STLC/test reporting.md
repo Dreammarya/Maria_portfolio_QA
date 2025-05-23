@@ -83,7 +83,7 @@ Requirement: Alcoholic products require age verification. A modal should appear 
 
 | Step# | Action                    | Expected Outcome                                      | OK/NOK | URL | Link to Issue |
 |-------|---------------------------|------------------------------------------------------|--------|-----|---------------|
-| 1     | Navigate to Alcohol category | Age verification modal appears                      |  ok      |     |               |
+| 1     | Navigate to Alcohol category | Age verification modal appears                      |  nok      |     | https://github.com/Dreammarya/Maria_portfolio_QA/issues/8              |
 | 2     | Enter "01/01/2007"         | User is granted access to alcoholic products       |      ok  |     |               |
 
 ### **2.2 Invalid Age Input (Blocked Access)**
@@ -103,6 +103,18 @@ Requirement: Alcoholic products require age verification. A modal should appear 
 | 2     | Enter "32/15/abcd"         | Error message: "Invalid date format. Please enter DD/MM/YYYY." |   ok     |     |               |
 
 ---
+### **2.4 No typo in a text**
+**Test Design Technique:** Use Case Testing 
+
+| Step# | Action                    | Expected Outcome                                      | OK/NOK | URL | Link to Issue |
+|-------|---------------------------|------------------------------------------------------|--------|-----|---------------|
+| 1     | Navigate to Alcohol category | no typio in  name                 |     nok   | https://grocerymate.masterschool.com/store#    |               |https://github.com/Dreammarya/Maria_portfolio_QA/issues/9
+
+<img width="767" alt="image" src="https://github.com/user-attachments/assets/df7c620d-e2fc-4792-b5a5-325ce9647a7a" />
+
+
+
+### **2.5 Non-Numeric or Incorrect Format Input**
 
 ## **3. Shipping Cost Changes**
 Requirement: Free shipping for orders above a certain amount. Orders below this amount will incur a shipping fee.
